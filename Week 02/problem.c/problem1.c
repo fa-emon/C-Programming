@@ -3,29 +3,32 @@ int main()
 {
     int a, b, c;
     scanf("%d %d %d", &a, &b, &c);
-    if ((a<b && a<c) && (c>a && c>b))
+    // minimum
+    if (a <= b && a <= c)
     {
-        printf("%d %d", a, c);
+        printf("%d", a);
     }
-    else if ((c<a && c<b) && (a>b && a>c))
+    else if (b <= a && b <= c)
     {
-        printf("%d %d", c, a);
+        printf("%d", b);
     }
-    else if ((a<b && a<c) && (b>a && b>c))
+    else
     {
-        printf("%d %d", a, b);
+        printf("%d", c);
     }
-    else if ((a>b && a>c) && (b<a && b<c))
+
+    // maximum
+    if (a >= b && a >= c)
     {
-        printf("%d %d", a, b);
+        printf(" %d", a);
     }
-    else if ((c>a && c>b) && (b<a && b<c))
+    else if (b >= a && b >= c)
     {
-        printf("%d %d", c, b);
+        printf(" %d", b);
     }
-    else if ((b>a && b>c) && (c<a && c<b))
+    else
     {
-        printf("%d %d", b, c);
+        printf(" %d", c);
     }
     return 0;
 }
