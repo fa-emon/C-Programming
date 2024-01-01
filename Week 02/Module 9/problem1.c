@@ -21,13 +21,12 @@ int main()
     for(int i=0; i<n; i++){
         array3[i] = array1[i];
     }
-    
+
     int i = n;
     for(int j=0; j<m; j++){
         array3[i] = array2[j];
         i++;
     }
-
     for(int i=0; i<n+m; i++){
         printf("%d ", array3[i]);
     }
