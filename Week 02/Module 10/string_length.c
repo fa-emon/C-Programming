@@ -2,7 +2,7 @@
 #include <string.h>
 int main()
 {
-    // {.....Using strlen.....}
+    // {.....Using strlen() .....}
     char a[100];
     scanf("%s", &a);
     int size = strlen(a);
